@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ui">
+        <div class="info">
+            <h1>Path Algorithms visualization</h1>
+            Click on a cell to set is as root and click again on other cell to set it as goal
+            then click on the algorithm you want
+        </div>
+        <!-- <label for="cell_width">Cell Size</label>
+        <input type="number" name="cell_width" id="cell_width" value="30"> -->
+        <!-- <button onclick="changeSize()">Change size</button> -->
+        <div class="buttons">
+            <button onclick="restart(grid)"> Reset </button>
+            <button onclick="DFS(grid,root,goal)"> DFS </button>
+            <button onclick="BFS(grid,root,goal)"> BFS </button>
+            <button onclick="Astar(grid, root, goal)"> A* </button>
+        </div>
+    </div>
+
+    <div id="main"></div>
+
+    <script src="./js/classes.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/algorithms.js"></script>
+</body>
+</html>
